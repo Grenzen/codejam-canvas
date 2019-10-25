@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 1440px;
+  height: 900px;
+  margin: 5px 3px;
+  background-color: #fff;
+}
+
+h1, p {
+  font-family: Geneva, Verdana, sans-serif;
+}
+
+.fas,
+.list__item {
+  opacity: .5;
+}
+
+.fas:hover, 
+.list__item:hover {
+  opacity: 1;
+}
+
+.list__item:nth-child(2):hover {
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.header_wrapper,
+.tools,
+.color_storage,
+.input_wrapper {
+  -webkit-box-shadow: -1px 3px 5px 1px rgba(0,0,0,0.35);
+  -moz-box-shadow: -1px 3px 5px 1px rgba(0,0,0,0.35);
+  box-shadow: -1px 3px 5px 1px rgba(0,0,0,0.35);
+}

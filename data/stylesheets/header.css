@@ -1,0 +1,16 @@
+.header_wrapper {
+  width: 1433px;
+  height: 48px;
+  padding: 14px 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  font-weight: 600;
+  margin-left: 30px;
+}
+
+.settings {
+  margin-left: auto;
+}
