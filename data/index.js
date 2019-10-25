@@ -39,12 +39,25 @@ function goCodewars(choose, num) {
   return console.log('congrats!!!');
 }
 
+function goRSS() {
+  let img = new Image();
+
+  img.onload = function() {
+    c.drawImage(img, 0, 0, 512, 512);
+  };
+  img.src = 'image.png';
+}
+
 rectangles.addEventListener('click', function() {
   goRectangles(128, 4);
 });
 
 codewars.addEventListener('click', function() {
   goCodewars(16, 32);
+});
+
+rss.addEventListener('click', function() {
+  goRSS();
 });
 
 
