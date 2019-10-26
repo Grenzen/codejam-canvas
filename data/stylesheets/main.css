@@ -1,0 +1,95 @@
+.main_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.tools,
+.color_storage {
+  height: 246px;
+}
+
+.tools_wrapper,
+.color_storage_wrapper,
+.input_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.tools_wrapper,
+.color_storage_wrapper {
+  height: 100%;
+}
+
+.input_wrapper {
+  height: 150px;
+  align-items: flex-start;
+  padding-left: 50px;
+}
+
+.tools,
+.color_storage,
+.input_wrapper {
+  width: 228px;
+  margin: 65px 20px;
+}
+
+
+.list__item i {
+  padding-right: 20px;
+}
+
+.list__item {
+  height: 20%;
+}
+
+.list__item p {
+  height: 100%;
+  width: 100%;
+  padding: 10px 16px;
+}
+
+.list__item:nth-child(2) {
+  border-bottom: 1px solid rgba(0, 0, 0, .5);
+}
+
+.color_storage_wrapper i {
+  width: 5px;
+  height: 5px;
+  margin-right: 20px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 50%;
+}
+
+.current {
+  background-color: rgba(85, 81, 81, 1);
+}
+
+.prev {
+  background-color: rgba(0, 255, 0, 1);
+}
+
+.red {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.blue {
+  background-color: rgb(51, 146, 235);
+}
+
+.button {
+  border: 0;
+  font-size: 16px;
+}
+
+.button, 
+.button:active, 
+.button:focus {
+  outline: none;
+}
+
+.canvas_wrapper {
+  padding-top: 60px;
+  margin-left: auto;
+  padding-right: 50px;
+}
