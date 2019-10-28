@@ -5,7 +5,7 @@ canvas.height = 512;
 
 let c = canvas.getContext('2d');
 
-function goRectangles(choose, num) {
+function goDraw(choose, num) {
   let sizeXY = choose,
       y = 0;
 
@@ -13,30 +13,17 @@ function goRectangles(choose, num) {
     let x = 0;
     
     for (let j = 0; j < num; j++) {
-      c.fillStyle = `#${rect[i][j]}`;
+
+      if (num === 32) {
+        c.fillStyle = `rgb(${flashbacks[i][j][0]}, ${flashbacks[i][j][1]}, ${flashbacks[i][j][2]}, ${flashbacks[i][j][3]})`;
+      } else {
+        c.fillStyle = `#${rect[i][j]}`;
+      }
       c.fillRect(x, y, sizeXY, sizeXY);
       x += sizeXY;
     }
     y += sizeXY;
   }
-  return console.log('congrats');
-}
-
-function goCodewars(choose, num) {
-  let sizeXY = choose,
-      y = 0;
-
-  for (let i = 0; i < num; i++) {
-    let x = 0;
-    
-    for (let j = 0; j < num; j++) {
-      c.fillStyle = `rgb(${flashbacks[i][j][0]}, ${flashbacks[i][j][1]}, ${flashbacks[i][j][2]}, ${flashbacks[i][j][3]})`;
-      c.fillRect(x, y, sizeXY, sizeXY);
-      x += sizeXY;
-    }
-    y += sizeXY;
-  }
-  return console.log('congrats!!!');
 }
 
 function goRSS() {
@@ -49,11 +36,11 @@ function goRSS() {
 }
 
 rectangles.addEventListener('click', function() {
-  goRectangles(128, 4);
+  goDraw(128, 4);
 });
 
 codewars.addEventListener('click', function() {
-  goCodewars(16, 32);
+  goDraw(16, 32);
 });
 
 rss.addEventListener('click', function() {
