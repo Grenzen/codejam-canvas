@@ -11,3 +11,6 @@ Maximum points - **50**
 #### Extra scope (only if basic is implemented)
 - [ ] Show image on canvas **10**
 - [ ] Dynamic canvas size switcher **10**
+
+gh-pages
+https://grenzen.github.io/codejam-canvas/data/
